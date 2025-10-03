@@ -131,13 +131,13 @@ For convenience, configuration through modifying environment variables is recomm
 + PASSWORD
 
   + **Description**: Password for mongodb, redis, and minio.
-  + **Default**: `openIM123`
+  + **Default**: `XIAOhei@338nnfLad876`
   + Notes:
     + Minimum password length: 8 characters.
     + Special characters are not allowed.
 
   ```bash
-  export PASSWORD="openIM123"
+  export PASSWORD="XIAOhei@338nnfLad876"
   ```
 
 + OPENIM_USER

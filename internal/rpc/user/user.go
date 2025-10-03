@@ -50,7 +50,7 @@ import (
 )
 
 const (
-	defaultSecret = "openIM123"
+	defaultSecret = "XIAOhei@338nnfLad876"
 )
 
 type userServer struct {

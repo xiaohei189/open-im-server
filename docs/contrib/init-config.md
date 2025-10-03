@@ -58,7 +58,7 @@ For instance, we can initially set a universal password and reuse this password 
 
 ```
 # Set a consistent password for easy memory
-def "PASSWORD" "openIM123"
+def "PASSWORD" "XIAOhei@338nnfLad876"
 
 # Linux system user for openim
 def "LINUX_USERNAME" "openim"

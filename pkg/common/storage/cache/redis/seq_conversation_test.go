@@ -2,19 +2,20 @@ package redis
 
 import (
 	"context"
-	"github.com/openimsdk/open-im-server/v3/pkg/common/storage/database/mgo"
-	"github.com/redis/go-redis/v9"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 	"strconv"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/openimsdk/open-im-server/v3/pkg/common/storage/database/mgo"
+	"github.com/redis/go-redis/v9"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func newTestSeq() *seqConversationCacheRedis {
-	mgocli, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://openIM:openIM123@127.0.0.1:37017/openim_v3?maxPoolSize=100").SetConnectTimeout(5*time.Second))
+	mgocli, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://openIM:XIAOhei@338nnfLad876@127.0.0.1:37017/openim_v3?maxPoolSize=100").SetConnectTimeout(5*time.Second))
 	if err != nil {
 		panic(err)
 	}
@@ -24,7 +25,7 @@ func newTestSeq() *seqConversationCacheRedis {
 	}
 	opt := &redis.Options{
 		Addr:     "127.0.0.1:16379",
-		Password: "openIM123",
+		Password: "XIAOhei@338nnfLad876",
 		DB:       1,
 	}
 	rdb := redis.NewClient(opt)

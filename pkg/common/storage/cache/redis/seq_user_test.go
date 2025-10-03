@@ -3,22 +3,23 @@ package redis
 import (
 	"context"
 	"fmt"
-	"github.com/openimsdk/open-im-server/v3/pkg/common/storage/cache/cachekey"
-	mgo2 "github.com/openimsdk/open-im-server/v3/pkg/common/storage/database/mgo"
-	"github.com/redis/go-redis/v9"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"
 	"strconv"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/openimsdk/open-im-server/v3/pkg/common/storage/cache/cachekey"
+	mgo2 "github.com/openimsdk/open-im-server/v3/pkg/common/storage/database/mgo"
+	"github.com/redis/go-redis/v9"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func newTestOnline() *userOnline {
 	opt := &redis.Options{
 		Addr:     "172.16.8.48:16379",
-		Password: "openIM123",
+		Password: "XIAOhei@338nnfLad876",
 		DB:       0,
 	}
 	rdb := redis.NewClient(opt)
@@ -84,14 +85,14 @@ func TestRecvOnline(t *testing.T) {
 func TestName1(t *testing.T) {
 	opt := &redis.Options{
 		Addr:     "172.16.8.48:16379",
-		Password: "openIM123",
+		Password: "XIAOhei@338nnfLad876",
 		DB:       0,
 	}
 	rdb := redis.NewClient(opt)
 
 	mgo, err := mongo.Connect(context.Background(),
 		options.Client().
-			ApplyURI("mongodb://openIM:openIM123@172.16.8.48:37017/openim_v3?maxPoolSize=100").
+			ApplyURI("mongodb://openIM:XIAOhei@338nnfLad876@172.16.8.48:37017/openim_v3?maxPoolSize=100").
 			SetConnectTimeout(5*time.Second))
 	if err != nil {
 		panic(err)

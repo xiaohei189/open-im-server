@@ -2,10 +2,11 @@ package redis
 
 import (
 	"context"
-	"github.com/openimsdk/open-im-server/v3/pkg/common/config"
-	"github.com/openimsdk/tools/db/redisutil"
 	"testing"
 	"time"
+
+	"github.com/openimsdk/open-im-server/v3/pkg/common/config"
+	"github.com/openimsdk/tools/db/redisutil"
 )
 
 /*
@@ -27,9 +28,9 @@ func TestName111111(t *testing.T) {
 			"172.16.8.124:7006",
 		},
 		RedisMode: "cluster",
-		Password:    "passwd123",
+		Password:  "passwd123",
 		//Address:  []string{"localhost:16379"},
-		//Password: "openIM123",
+		//Password: "XIAOhei@338nnfLad876",
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*1000)
 	defer cancel()

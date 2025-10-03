@@ -50,7 +50,7 @@ data:
     # Username for database authentication
     username: ''  # openIM
     # Password for database authentication
-    password: '' # openIM123
+    password: '' # XIAOhei@338nnfLad876
     # Authentication source for database authentication, if use root user, set it to admin
     authSource: openim_v3
     # Maximum number of connections in the connection pool
@@ -373,7 +373,7 @@ data:
         publicRead: false
 
   share.yml: |
-    secret: openIM123
+    secret: XIAOhei@338nnfLad876
 
     imAdminUserID: ["imAdmin"]
 
@@ -427,7 +427,7 @@ data:
   redis.yml: |
     address: [ "redis-service:16379" ]
     username:
-    password:  # openIM123
+    password:  # XIAOhei@338nnfLad876
     clusterMode: false
     db: 0
     maxRetry: 10
@@ -439,7 +439,7 @@ data:
     # Access key ID for MinIO authentication
     accessKeyID: root   
     # Secret access key for MinIO authentication
-    secretAccessKey:    # openIM123
+    secretAccessKey:    # XIAOhei@338nnfLad876
     # Session token for MinIO authentication (optional)
     sessionToken:
     # Internal address of the MinIO server

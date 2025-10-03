@@ -29,7 +29,7 @@ import (
 func RunE2ETests(t *testing.T) {
 
 	// Example usage of new functions
-	token, _ := gettoken.GetUserToken("openIM123456")
+	token, _ := gettoken.GetUserToken("XIAOhei@338nnfLad876456")
 
 	// Example of getting user info
 	_ = user.GetUsersInfo(token, []string{"user1", "user2"})
@@ -44,7 +44,7 @@ func RunE2ETests(t *testing.T) {
 	_ = user.ForceLogout(token, "4950983283", 2)
 
 	// Example of checking user account
-	_ = user.CheckUserAccount(token, []string{"openIM123456", "anotherUserID"})
+	_ = user.CheckUserAccount(token, []string{"XIAOhei@338nnfLad876456", "anotherUserID"})
 
 	// Example of getting users
 	_ = user.GetUsers(token, 1, 100)

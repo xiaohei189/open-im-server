@@ -19,15 +19,15 @@ func TestLoadLogConfig(t *testing.T) {
 func TestLoadMongoConfig(t *testing.T) {
 	var mongo Mongo
 	// os.Setenv("DEPLOYMENT_TYPE", "kubernetes")
-	os.Setenv("IMENV_MONGODB_PASSWORD", "openIM1231231")
-	// os.Setenv("IMENV_MONGODB_URI", "openIM123")
-	// os.Setenv("IMENV_MONGODB_USERNAME", "openIM123")
+	os.Setenv("IMENV_MONGODB_PASSWORD", "XIAOhei@338nnfLad8761231")
+	// os.Setenv("IMENV_MONGODB_URI", "XIAOhei@338nnfLad876")
+	// os.Setenv("IMENV_MONGODB_USERNAME", "XIAOhei@338nnfLad876")
 	err := Load("../../../config/", "mongodb.yml", "IMENV_MONGODB", &mongo)
 	// err := LoadApiConfig("../../../config/mongodb.yml", "IMENV_MONGODB", &mongo)
 
 	assert.Nil(t, err)
 	t.Log(mongo.Password)
-	// assert.Equal(t, "openIM123", mongo.Password)
+	// assert.Equal(t, "XIAOhei@338nnfLad876", mongo.Password)
 	t.Log(os.Getenv("IMENV_MONGODB_PASSWORD"))
 	t.Log(mongo)
 	// //export IMENV_OPENIM_RPC_USER_RPC_LISTENIP="0.0.0.0"

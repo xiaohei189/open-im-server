@@ -27,7 +27,7 @@ const (
 	APIHost         = "http://127.0.0.1:10002"
 	UserTokenURL    = APIHost + "/auth/user_token"
 	UserRegisterURL = APIHost + "/user/user_register"
-	SecretKey       = "openIM123"
+	SecretKey       = "XIAOhei@338nnfLad876"
 	OperationID     = "1646445464564"
 )
 
@@ -58,7 +58,7 @@ type UserRegisterRequest struct {
 
 /* func main() {
 	// Example usage of functions
-	token, err := GetUserToken("openIM123456")
+	token, err := GetUserToken("XIAOhei@338nnfLad876456")
 	if err != nil {
 		log.Fatalf("Error getting user token: %v", err)
 	}

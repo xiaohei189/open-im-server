@@ -165,7 +165,7 @@ docker run -d \
   -p 3306:33060 \
   -v "$(pwd)/components/mysql/data:/var/lib/mysql" \
   -v "/etc/localtime:/etc/localtime" \
-  -e MYSQL_ROOT_PASSWORD="openIM123" \
+  -e MYSQL_ROOT_PASSWORD="XIAOhei@338nnfLad876" \
   --restart always \
   mariadb:10.6
 ```

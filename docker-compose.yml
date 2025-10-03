@@ -42,10 +42,10 @@ services:
       - TZ=Asia/Shanghai
       - wiredTigerCacheSizeGB=1
       - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=openIM123
+      - MONGO_INITDB_ROOT_PASSWORD=XIAOhei@338nnfLad876
       - MONGO_INITDB_DATABASE=openim_v3
       - MONGO_OPENIM_USERNAME=openIM
-      - MONGO_OPENIM_PASSWORD=openIM123
+      - MONGO_OPENIM_PASSWORD=XIAOhei@338nnfLad876
     restart: always
     networks:
       - openim
@@ -65,7 +65,7 @@ services:
       net.core.somaxconn: 1024
     command: >
       redis-server
-      --requirepass openIM123
+      --requirepass XIAOhei@338nnfLad876
       --appendonly yes
       --aof-use-rdb-preamble yes
       --save ""
@@ -92,9 +92,9 @@ services:
 
       ## Optional: Enable etcd authentication by setting the following credentials
       # - ETCD_ROOT_USER=root
-      # - ETCD_ROOT_PASSWORD=openIM123
+      # - ETCD_ROOT_PASSWORD=XIAOhei@338nnfLad876
       # - ETCD_USERNAME=openIM
-      # - ETCD_PASSWORD=openIM123
+      # - ETCD_PASSWORD=XIAOhei@338nnfLad876
     volumes:
       - "${DATA_DIR}/components/etcd:/etcd-data"
     command: >
@@ -215,7 +215,7 @@ services:
 
       # Authentication configuration variables - comment out to disable auth
       # KAFKA_USERNAME: "openIM"
-      # KAFKA_PASSWORD: "openIM123"
+      # KAFKA_PASSWORD: "XIAOhei@338nnfLad876"
     command: >
       /bin/sh -c '
         if [ -n "$${KAFKA_USERNAME}" ] && [ -n "$${KAFKA_PASSWORD}" ]; then
@@ -251,7 +251,7 @@ services:
     environment:
       TZ: Asia/Shanghai
       MINIO_ROOT_USER: root
-      MINIO_ROOT_PASSWORD: openIM123
+      MINIO_ROOT_PASSWORD: XIAOhei@338nnfLad876
     restart: always
     command: minio server /data --console-address ':9090'
     networks:

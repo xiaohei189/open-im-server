@@ -2,11 +2,12 @@ package mgo
 
 import (
 	"context"
+	"testing"
+	"time"
+
 	"github.com/openimsdk/open-im-server/v3/pkg/common/storage/model"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"testing"
-	"time"
 )
 
 //func Result[V any](val V, err error) V {
@@ -23,7 +24,7 @@ func Check(err error) {
 }
 
 func TestName(t *testing.T) {
-	cli := Result(mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://openIM:openIM123@172.16.8.48:37017/openim_v3?maxPoolSize=100").SetConnectTimeout(5*time.Second)))
+	cli := Result(mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://openIM:XIAOhei@338nnfLad876@172.16.8.48:37017/openim_v3?maxPoolSize=100").SetConnectTimeout(5*time.Second)))
 	coll := cli.Database("openim_v3").Collection("version_test")
 	tmp, err := NewVersionLog(coll)
 	if err != nil {

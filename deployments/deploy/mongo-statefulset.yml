@@ -102,7 +102,7 @@ metadata:
 type: Opaque
 data:
   mongo_initdb_root_username: cm9vdA== # base64 for "root"
-  mongo_initdb_root_password: b3BlbklNMTIz # base64 for "openIM123"
+  mongo_initdb_root_password: b3BlbklNMTIz # base64 for "XIAOhei@338nnfLad876"
   mongo_initdb_database: b3BlbmltX3Yz # base64 for "openim_v3"
   mongo_openim_username: b3BlbklN # base64 for "openIM"
-  mongo_openim_password: b3BlbklNMTIz # base64 for "openIM123"
+  mongo_openim_password: b3BlbklNMTIz # base64 for "XIAOhei@338nnfLad876"

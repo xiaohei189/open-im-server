@@ -58,10 +58,10 @@ func main() {
 	flag.StringVar(&conf.Api, "api", "http://127.0.0.1:10002", "API endpoint for the IM service")
 
 	// IM administrator's user ID
-	flag.StringVar(&conf.UserID, "userID", "openIM123456", "IM administrator's user ID")
+	flag.StringVar(&conf.UserID, "userID", "XIAOhei@338nnfLad876456", "IM administrator's user ID")
 
 	// Secret for the IM configuration
-	flag.StringVar(&conf.Secret, "secret", "openIM123", "Secret for the IM configuration")
+	flag.StringVar(&conf.Secret, "secret", "XIAOhei@338nnfLad876", "Secret for the IM configuration")
 
 	flag.Parse()
 	if !filepath.IsAbs(conf.TaskPath) {

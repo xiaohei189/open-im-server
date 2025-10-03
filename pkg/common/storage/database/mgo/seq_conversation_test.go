@@ -20,7 +20,7 @@ func Mongodb() *mongo.Database {
 	return Result(
 		mongo.Connect(context.Background(),
 			options.Client().
-				ApplyURI("mongodb://openIM:openIM123@172.16.8.135:37017/openim_v3?maxPoolSize=100").
+				ApplyURI("mongodb://openIM:XIAOhei@338nnfLad876@172.16.8.135:37017/openim_v3?maxPoolSize=100").
 				SetConnectTimeout(5*time.Second)),
 	).Database("openim_v3")
 }

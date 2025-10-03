@@ -66,8 +66,8 @@ GITHUB_TOKEN=
 # OPENIM_USER=root 
 
 # Default password for redis, mysql, mongo, as well as accessSecret in config/config.yaml.
-# Remember, it should be a combination of 8 or more numbers and letters. If you want to set a different password, uncomment and replace "openIM123".
-# PASSWORD=openIM123
+# Remember, it should be a combination of 8 or more numbers and letters. If you want to set a different password, uncomment and replace "XIAOhei@338nnfLad876".
+# PASSWORD=XIAOhei@338nnfLad876
 
 # Default endpoint for minio's external service IP and port. If you want to use a different endpoint, uncomment and replace.
 # ENDPOINT=http://127.0.0.1:10005 
@@ -250,11 +250,11 @@ function set_openim_env() {
         debug "OPENIM_USER is not set. Defaulting to 'root'."
     fi
 
-    # If the PASSWORD environment variable is not set, it defaults to 'openIM123'
+    # If the PASSWORD environment variable is not set, it defaults to 'XIAOhei@338nnfLad876'
     # This password applies to redis, mysql, mongo, as well as accessSecret in config/config.yaml
     if [ -z "$PASSWORD" ]; then
-        PASSWORD="openIM123"
-        debug "PASSWORD is not set. Defaulting to 'openIM123'."
+        PASSWORD="XIAOhei@338nnfLad876"
+        debug "PASSWORD is not set. Defaulting to 'XIAOhei@338nnfLad876'."
     fi
 
     # If the ENDPOINT environment variable is not set, it defaults to 'http://127.0.0.1:10005'
@@ -300,7 +300,7 @@ function cmd_help() {
     echo
     color_echo ${BLUE_PREFIX} "-i,  --install       ${CYAN_PREFIX}Execute the installation logic of the script${COLOR_SUFFIX}"
     color_echo ${BLUE_PREFIX} "-u,  --user          ${CYAN_PREFIX}set user (default: root)${COLOR_SUFFIX}"
-    color_echo ${BLUE_PREFIX} "-p,  --password      ${CYAN_PREFIX}set password (default: openIM123)${COLOR_SUFFIX}"
+    color_echo ${BLUE_PREFIX} "-p,  --password      ${CYAN_PREFIX}set password (default: XIAOhei@338nnfLad876)${COLOR_SUFFIX}"
     color_echo ${BLUE_PREFIX} "-e,  --endpoint      ${CYAN_PREFIX}set endpoint (default: http://127.0.0.1:10005)${COLOR_SUFFIX}"
     color_echo ${BLUE_PREFIX} "-a,  --api           ${CYAN_PREFIX}set API URL (default: http://127.0.0.1:10002/object/)${COLOR_SUFFIX}"
     color_echo ${BLUE_PREFIX} "-d,  --directory     ${CYAN_PREFIX}set directory for large disk space (default: ./)${COLOR_SUFFIX}"
@@ -322,7 +322,7 @@ function cmd_help() {
 function parseinput() {
     # set default values
     # OPENIM_USER=root
-    # PASSWORD=openIM123
+    # PASSWORD=XIAOhei@338nnfLad876
     # ENDPOINT=http://127.0.0.1:10005
     # API=http://127.0.0.1:10002/object/
     # DIRECTORY=./

@@ -5,6 +5,10 @@
 </p>
 
 <div align="center">
+    /// 获取在线用户列表
+    pub async fn get_online_users(&self) -> HashMap<String, DateTime<Utc>> {
+        self.online_users.lock().await.clone()
+    }
 
 [![Stars](https://img.shields.io/github/stars/openimsdk/open-im-server?style=for-the-badge&logo=github&colorB=ff69b4)](https://github.com/openimsdk/open-im-server/stargazers)
 [![Forks](https://img.shields.io/github/forks/openimsdk/open-im-server?style=for-the-badge&logo=github&colorB=blue)](https://github.com/openimsdk/open-im-server/network/members)
