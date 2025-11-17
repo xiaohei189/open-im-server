@@ -1,4 +1,4 @@
-address: [localhost:16379]
+address: [127.0.0.1:16379]
 username:
 password: XIAOhei@338nnfLad876
 # redis Mode, including "standalone","cluster","sentinel"

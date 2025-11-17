@@ -1,0 +1,194 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 msggateway",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-msggateway",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_MONGODB_ADDRESS": "mongodb://openIM:openIM123@localhost:27017/openim_v3?maxPoolSize=100",
+                "IMENV_REDIS_ADDRESS": "localhost:16379",
+                "IMENV_REDIS_PASSWORD": "openIM123",
+                "IMENV_DISCOVERY_ETCD_ADDRESS": "localhost:12379",
+                "IMENV_KAFKA_ADDRESS": "localhost:19094",
+                "IMENV_LOG_ISSTDOUT": "true",
+                "IMENV_LOG_REMAINLOGLEVEL": "6",
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": [
+                "--config_folder_path",
+                "${workspaceFolder}/config"
+            ],
+            "showLog": true
+        },
+        {
+            "name": "调试 api",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-api",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_MONGODB_ADDRESS": "mongodb://openIM:openIM123@127.0.0.1:27017/openim_v3?maxPoolSize=100",
+                "IMENV_REDIS_ADDRESS": "127.0.0.1:16379",
+                "IMENV_REDIS_PASSWORD": "openIM123",
+                "IMENV_DISCOVERY_ETCD_ADDRESS": "127.0.0.1:12379",
+                "IMENV_KAFKA_ADDRESS": "127.0.0.1:19094",
+                "IMENV_MINIO_INTERNALADDRESS": "127.0.0.1:10005",
+                "IMENV_MINIO_EXTERNALADDRESS": "127.0.0.1:10005",
+                "IMENV_MINIO_ACCESSKEYID": "root",
+                "IMENV_MINIO_SECRETACCESSKEY": "openIM123",
+                "IMENV_SHARE_SECRET": "openIM123",
+                "IMENV_LOG_ISSTDOUT": "true",
+                "IMENV_LOG_REMAINLOGLEVEL": "6",
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": [
+                "--config_folder_path",
+                "${workspaceFolder}/config"
+            ]
+        },
+        {
+            "name": "调试 RPC-MSG",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-msg",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_MONGODB_ADDRESS": "mongodb://openIM:openIM123@127.0.0.1:27017/openim_v3?maxPoolSize=100",
+                "IMENV_REDIS_ADDRESS": "127.0.0.1:16379",
+                "IMENV_REDIS_PASSWORD": "openIM123",
+                "IMENV_DISCOVERY_ETCD_ADDRESS": "127.0.0.1:12379",
+                "IMENV_KAFKA_ADDRESS": "127.0.0.1:19094",
+                "IMENV_MINIO_INTERNALADDRESS": "127.0.0.1:10005",
+                "IMENV_MINIO_EXTERNALADDRESS": "127.0.0.1:10005",
+                "IMENV_MINIO_ACCESSKEYID": "root",
+                "IMENV_MINIO_SECRETACCESSKEY": "openIM123",
+                "IMENV_SHARE_SECRET": "openIM123",
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-AUTH",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-auth",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-USER",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-user",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-FRIEND",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-friend",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-GROUP",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-group",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-CONVERSATION",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-conversation",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 RPC-THIRD",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-rpc/openim-rpc-third",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+        {
+            "name": "调试 PUSH",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/openim-push",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "IMENV_CONFIG_FOLDER_PATH": "${workspaceFolder}/config"
+            },
+            "args": ["--config_folder_path", "${workspaceFolder}/config"]
+        },
+    ],
+    "compounds": [
+        {
+            "name": "🚀 一键启动所有 RPC 服务",
+            "configurations": [
+                "调试 RPC-AUTH",
+                "调试 RPC-USER", 
+                "调试 RPC-FRIEND",
+                "调试 RPC-GROUP",
+                "调试 RPC-CONVERSATION",
+                "调试 RPC-MSG",
+                "调试 RPC-THIRD",
+                "调试 PUSH"
+            ],
+            "stopAll": true
+        },
+        {
+            "name": "🚀 完整 OpenIM Server (所有服务)",
+            "configurations": [
+                "调试 RPC-AUTH",
+                "调试 RPC-USER",
+                "调试 RPC-FRIEND",
+                "调试 RPC-GROUP",
+                "调试 RPC-CONVERSATION",
+                "调试 RPC-MSG",
+                "调试 RPC-THIRD",
+                "调试 PUSH",
+                "调试 msggateway",
+                "调试 api"
+            ],
+            "stopAll": true
+        }
+    ]
+}
+

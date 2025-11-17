@@ -7,8 +7,8 @@ secretAccessKey: XIAOhei@338nnfLad876
 # Session token for MinIO authentication (optional)
 sessionToken:
 # Internal address of the MinIO server
-internalAddress: localhost:10005
+internalAddress: 127.0.0.1:10005
 # External address of the MinIO server, accessible from outside. Supports both HTTP and HTTPS using a domain name
-externalAddress: http://external_ip:10005
+externalAddress: http://127.0.0.1:10005
 # Flag to enable or disable public read access to the bucket
 publicRead: false
