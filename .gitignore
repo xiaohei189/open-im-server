@@ -106,13 +106,13 @@ flycheck_*.el
 /network-security.data
 
 ### vscode ###
-.vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# .vscode
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,jetbrains,vscode,git,go,tags,backup,test
 
