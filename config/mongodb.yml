@@ -7,7 +7,7 @@ database: openim_v3
 # Username for database authentication
 username: openIM
 # Password for database authentication
-password: XIAOhei@338nnfLad876
+password: openIM123#&9873d
 # Authentication source for database authentication, if use root user, set it to admin
 authSource: openim_v3
 # Maximum number of connections in the connection pool

@@ -1,6 +1,6 @@
 address: [127.0.0.1:16379]
 username:
-password: XIAOhei@338nnfLad876
+password: openIM123#&9873d
 # redis Mode, including "standalone","cluster","sentinel"
 redisMode: "standalone"
 db: 0

@@ -46,7 +46,7 @@ func NewGroupRpcCmd() *GroupRpcCmd {
 		config.LocalCacheConfigFileName:  &groupConfig.LocalCacheConfig,
 		config.DiscoveryConfigFilename:   &groupConfig.Discovery,
 	}
-	ret.RootCmd = NewRootCmd(program.GetProcessName(), WithConfigMap(ret.configMap))
+	ret.RootCmd = NewRootCmd(program.GetProcessName(), WithLogName(program.GetProcessName()), WithConfigMap(ret.configMap))
 	ret.ctx = context.WithValue(context.Background(), "version", version.Version)
 	ret.Command.RunE = func(cmd *cobra.Command, args []string) error {
 		return ret.runE()

@@ -45,7 +45,7 @@ func NewConversationRpcCmd() *ConversationRpcCmd {
 		config.LocalCacheConfigFileName:         &conversationConfig.LocalCacheConfig,
 		config.DiscoveryConfigFilename:          &conversationConfig.Discovery,
 	}
-	ret.RootCmd = NewRootCmd(program.GetProcessName(), WithConfigMap(ret.configMap))
+	ret.RootCmd = NewRootCmd(program.GetProcessName(), WithLogName(program.GetProcessName()), WithConfigMap(ret.configMap))
 	ret.ctx = context.WithValue(context.Background(), "version", version.Version)
 	ret.Command.RunE = func(cmd *cobra.Command, args []string) error {
 		return ret.runE()
