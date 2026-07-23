@@ -4,14 +4,21 @@ ARG RELEASE=false
 ARG COMPRESS=false
 WORKDIR /openim-server
 
+ENV GOPROXY=https://goproxy.cn,direct
+
 RUN apk add --no-cache upx
 
-RUN go install github.com/magefile/mage@latest
+RUN --mount=type=cache,target=/go/pkg/mod \
+    go install github.com/magefile/mage@latest
 
 COPY . .
-RUN go mod download
-RUN RELEASE=${RELEASE} COMPRESS=${COMPRESS} mage build
-RUN mage -compile ./mage -ldflags "-s -w"
+RUN --mount=type=cache,target=/go/pkg/mod \
+    go mod download
+RUN --mount=type=cache,target=/go/pkg/mod \
+    --mount=type=cache,target=/root/.cache/go-build \
+    RELEASE=${RELEASE} COMPRESS=${COMPRESS} mage build
+RUN --mount=type=cache,target=/root/.cache/go-build \
+    mage -compile ./mage -ldflags "-s -w"
 
 FROM alpine:latest
 

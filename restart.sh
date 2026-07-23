@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOG_DIR="$SCRIPT_DIR/_output/logs"
 BIN_DIR="$SCRIPT_DIR/_output/bin/platforms/linux/amd64"
 mkdir -p "$LOG_DIR"
-export PATH=$PATH:/home/weirui/go/bin
+export PATH=$PATH:/usr/local/go/bin:/home/weirui/go/bin
 
 # 所有服务
 ALL_SERVICES=(
